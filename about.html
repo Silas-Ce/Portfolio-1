@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Silas Ceaser</title>
+  <meta name="description" content="Learn more about Silas Ceaser, a front-end developer with a passion for modern web and mobile interfaces." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <div class="logo-section">
+            <i class="fas fa-code logo-icon"></i>
+            <span class="logo-text">Silas Silas</span>
+          </div>
+          <img src="images/profile.jfif" alt="Silas Silas" class="profile-image">
+        </div>
+        <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-links">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links" id="navbar-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+          <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+          <li><a href="skills.html"><i class="fas fa-lightbulb"></i> Skills</a></li>
+          <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
+          <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Silas Silas, a creative and dedicated third-year Software Engineering student at NUST. My passion lies in front-end development, where I enjoy bringing user interfaces to life with clean code and thoughtful design.
+        </p>
+        <p>
+          I believe good design is invisible, and great code should be maintainable and meaningful. I love collaborating with teams, solving problems with empathy, and learning new technologies that push me out of my comfort zone.
+        </p>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <ul>
+              <li><strong>NUST University</strong> — Bachelor of Software Engineering (2022–2025)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3><i class="fas fa-laptop-code"></i> Skills</h3>
+            <div class="tech-stack">
+              <span><i class="fab fa-html5"></i> HTML5</span>
+              <span><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span><i class="fab fa-js"></i> JavaScript</span>
+              <span><i class="fab fa-react"></i> React</span>
+              <span><i class="fab fa-node-js"></i> Node.js</span>
+              <span><i class="fab fa-git-alt"></i> Git</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3><i class="fas fa-heart"></i> Interests</h3>
+            <ul>
+              <li>Front-end Development</li>
+              <li>UI/UX Design</li>
+              <li>Web Technologies</li>
+              <li>Problem Solving</li>
+              <li>Continuous Learning</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Silas Silas. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:silasilas32@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            Email
+          </a>
+          <a href="https://github.com/Silas-Ce" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/silas-silas-ceaser/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Theme toggle script -->
+  <script src="theme-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me | Silas Silas</title>
+  <meta name="description" content="Contact Silas Silas, a front-end developer, for collaboration or project inquiries." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<<<<<<< HEAD
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+=======
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <style>
+    .contact-form {
+      max-width: 500px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #23272f;
+      background: #181818;
+      color: #f5f6fa;
+      border-radius: 6px;
+      resize: vertical;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #4da8ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #2a85ff;
+    }
+    .message {
+      max-width: 500px;
+      margin: 1rem auto;
+      text-align: center;
+      font-weight: 600;
+    }
+  </style>
+  <script>
+// Toggle and remember mode preference
+function toggleMode() {
+  const isLight = document.body.classList.toggle('light-mode');
+  localStorage.setItem('preferredMode', isLight ? 'light' : 'dark');
+}
+
+// On page load, set the saved theme
+document.addEventListener('DOMContentLoaded', function () {
+  const savedMode = localStorage.getItem('preferredMode');
+  if (savedMode === 'light') {
+    document.body.classList.add('light-mode');
+  }
+});
+</script>
+
+>>>>>>> 58a75b23fa9b55b38dd06234f6e8d906b09cc3b4
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navbar will be injected here -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <div class="logo-section">
+            <i class="fas fa-code logo-icon"></i>
+            <span class="logo-text">Silas Silas</span>
+          </div>
+          <img src="images/profile.jfif" alt="Silas Silas" class="profile-image">
+        </div>
+        <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-links">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links" id="navbar-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a></li>
+          <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+          <li><a href="skills.html"><i class="fas fa-lightbulb"></i> Skills</a></li>
+          <li><a href="certificates.html"><i class="fas fa-certificate"></i> Certificates</a></li>
+          <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<<<<<<< HEAD
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1>Get In Touch</h1>
+          <p>Ready to start a project or just want to chat? I'd love to hear from you!</p>
+          <div class="hero-buttons">
+            <a href="#contact-form" class="btn btn-large">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </a>
+            <a href="mailto:silasilas32@gmail.com" class="btn btn-secondary btn-large">
+              <i class="fas fa-envelope"></i>
+              Email Directly
+            </a>
+          </div>
+        </div>
+      </section>
+=======
+  <!-- Google reCAPTCHA -->
+  <div class="g-recaptcha" data-sitekey="6LdnnpsrAAAAACiEulayehLOHapqs_iBq83Su41W"></div>
+>>>>>>> 58a75b23fa9b55b38dd06234f6e8d906b09cc3b4
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <h2>Let's Connect</h2>
+        <p>I'm always open to discussing new opportunities, interesting projects, or just having a friendly chat about technology and development.</p>
+        
+        <!-- Contact Information Cards -->
+        <div class="contact-info-grid">
+          <div class="card contact-card">
+            <div class="card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>silasilas32@gmail.com</p>
+            <a href="mailto:silasilas32@gmail.com" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Send Email
+            </a>
+          </div>
+          
+          <div class="card contact-card">
+            <div class="card-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Connect with me professionally</p>
+            <a href="https://www.linkedin.com/in/silas-silas-ceaser/" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-linkedin"></i>
+              Connect
+            </a>
+          </div>
+          
+          <div class="card contact-card">
+            <div class="card-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p>Check out my projects</p>
+            <a href="https://github.com/Silas-Ce" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-github"></i>
+              View Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container" id="contact-form">
+          <h3>Send Me a Message</h3>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i>
+                Your Name
+              </label>
+              <input 
+                type="text" 
+                id="name"
+                name="name" 
+                required 
+                placeholder="Enter your full name"
+                autocomplete="name"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i>
+                Your Email
+              </label>
+              <input 
+                type="email" 
+                id="email"
+                name="email" 
+                required 
+                placeholder="Enter your email address"
+                autocomplete="email"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">
+                <i class="fas fa-tag"></i>
+                Subject
+              </label>
+              <input 
+                type="text" 
+                id="subject"
+                name="subject" 
+                required 
+                placeholder="What's this about?"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="message">
+                <i class="fas fa-comment"></i>
+                Your Message
+              </label>
+              <textarea 
+                id="message"
+                name="message" 
+                rows="6" 
+                required 
+                placeholder="Tell me about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <!-- Google reCAPTCHA -->
+            <div class="recaptcha-container">
+              <div class="g-recaptcha" data-sitekey="6LeYoZsrAAAAAJJhqslbbJLpvorDILfBCVxRUb5R"></div>
+            </div>
+
+            <button type="submit" class="btn btn-large">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+
+          <div id="formMessage" class="message"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Silas Silas. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:silasilas32@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+            Email
+          </a>
+          <a href="https://github.com/Silas-Ce" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/silas-silas-ceaser/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Theme toggle script -->
+  <script src="theme-toggle.js"></script>
+</body>
+
+</html>
+
