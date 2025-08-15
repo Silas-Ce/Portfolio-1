@@ -20,6 +20,12 @@ class ThemeManager {
     
     // Add scroll spy functionality
     this.initScrollSpy();
+    
+    // Add current page indication
+    this.setCurrentPageActive();
+    
+    // Add scroll animations
+    this.initScrollAnimations();
   }
 
   createThemeToggle() {
@@ -120,6 +126,46 @@ class ThemeManager {
       if (href === `#${activeId}`) {
         link.classList.add('scroll-active');
       }
+    });
+  }
+
+  setCurrentPageActive() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.navbar-links a');
+    
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      // Check if this is the current page
+      if (href === currentPage || 
+          (currentPage === 'index.html' && href === 'index.html') ||
+          (currentPage === '' && href === 'index.html')) {
+        link.classList.add('active');
+        // Add a subtle animation to the active link
+        link.style.animation = 'pulse 2s ease-in-out infinite';
+      } else {
+        link.classList.remove('active');
+        link.style.animation = '';
+      }
+    });
+  }
+
+  initScrollAnimations() {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in-up');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all cards and sections
+    document.querySelectorAll('.card, .section h2, .section p').forEach(el => {
+      observer.observe(el);
     });
   }
 }
