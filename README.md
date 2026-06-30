@@ -1,4 +1,4 @@
-# Silas Silas - Portfolio Website
+****# Silas Silas - Portfolio Website
 
 A modern, responsive portfolio website with a comprehensive three-theme system, enhanced user experience, and professional design.
 
@@ -211,3 +211,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Google Fonts for typography
 - Inter font family for clean, modern design
 - CSS Grid and Flexbox for responsive layouts
+****
